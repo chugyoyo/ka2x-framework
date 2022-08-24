@@ -8,8 +8,6 @@
         <version>0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <version>0.1</version>
-
     <artifactId>ka2x-swagger</artifactId>
 
     <properties>
@@ -19,7 +17,6 @@
         <dependency>
             <groupId>com.ka2x</groupId>
             <artifactId>ka2x-common</artifactId>
-            <version>${ka2x.version}</version>
         </dependency>
     </dependencies>
 </project>
