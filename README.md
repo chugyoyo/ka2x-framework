@@ -1,16 +1,36 @@
-### Hi there 👋
+# Getting Started
 
-<!--
-**ka2x/ka2x** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Maven
 
-Here are some ideas to get you started:
+~~~xml
+<!--ka2x framework-->
+<dependency>
+    <groupId>com.ka2x</groupId>
+    <artifactId>ka2x</artifactId>
+    <version>0.1</version>
+</dependency>
+~~~
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Reference Documentation
+
+For further reference, please consider the following sections:
+
+* [http://www.ka2x.com](http://www.ka2x.com)
+
+### Guides
+
+The following guides illustrate how to use some features concretely:
+
+### Git Repository
+
+* [https://github.com/ka2x/ka2x](https://github.com/ka2x/ka2x)
+
+### Version
+
+|version|introduction|
+|---|---|
+|0.1.0|project structure init without any function|
+
+### Finally
+
+design your own framework, just enjoy it~
