@@ -15,6 +15,17 @@
 
     <dependencies>
         <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.springfox</groupId>-->
+<!--            <artifactId>springfox-oas</artifactId>-->
+<!--            <version>${swagger.version}</version>-->
+<!--        </dependency>-->
+
+        <dependency>
             <groupId>com.ka2x</groupId>
             <artifactId>ka2x-common</artifactId>
         </dependency>

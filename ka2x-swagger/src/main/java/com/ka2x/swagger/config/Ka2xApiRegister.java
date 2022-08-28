@@ -165,7 +165,6 @@ public class Ka2xApiRegister implements ImportBeanDefinitionRegistrar,
      * @author ka2x
      * @since 2022/8/28 0:45
      */
-
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         Annotation[] annotations = bean.getClass().getAnnotationsByType(Ka2xApi.class);

@@ -1,2 +1,16 @@
 server:
   port: 10101
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+springfox:
+  documentation:
+    swagger-ui:
+      base-url: /
+      enabled: true
+    swagger:
+      v2:
+        enabled: true
+        use-model-v3: true
