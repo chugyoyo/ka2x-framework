@@ -7,6 +7,8 @@ import com.ka2x.demo.inca.HelloService;
 import com.ka2x.swagger.annotation.EnableKa2xApi;
 import com.ka2x.swagger.inca.ClientRequest;
 import com.sun.istack.internal.NotNull;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
+@Api(value = "hello api",tags = "api 测试")
 @Slf4j
 @RestController
 @RequestMapping("/hello")
@@ -25,6 +28,7 @@ public class HelloController {
     @Autowired
     private HelloService helloService;
 
+    @ApiOperation("hello")
     @GetMapping("/hello")
     public ResponseEntity<String> hello(@RequestHeader(required = false) ClientRequest request) {
         ResponseEntity<HelloResp> responseEntity;

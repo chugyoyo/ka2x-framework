@@ -5,12 +5,22 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Mimashi123!
+    url: "jdbc:mysql://122.9.114.54:3306/ka2x?useUnicode=true&characterEncoding=UTF-8& \
+    zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8& \
+    useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&allowMultiQueries=true& \
+    autoReconnect=true"
+    druid:
+      enable: true
+
+logging:
+  level:
+    learning: debug
+
 springfox:
   documentation:
     swagger-ui:
-      base-url: /
       enabled: true
-    swagger:
-      v2:
-        enabled: true
-        use-model-v3: true

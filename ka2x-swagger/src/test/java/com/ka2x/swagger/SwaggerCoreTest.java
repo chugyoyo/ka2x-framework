@@ -61,7 +61,6 @@ public class SwaggerCoreTest {
         RefModel model = new RefModel("User");
 
         RefProperty refProperty = new RefProperty("User");
-        response.setResponseSchema(model);
         response.setSchema(refProperty);
         operation.addResponse("200", response);
         path.set("post", operation);
@@ -82,7 +81,6 @@ public class SwaggerCoreTest {
         RefModel model = new RefModel("User");
 
         RefProperty refProperty = new RefProperty("User");
-        response.setResponseSchema(model);
         response.setSchema(refProperty);
         operation.addResponse("200", response);
         path.set("post", operation);

@@ -1,6 +1,5 @@
 package com.ka2x.demo.config;
 
-import com.ka2x.swagger.aspect.Ka2xApiAspect;
 import com.ka2x.swagger.config.Ka2xApiRegister;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -2,10 +2,10 @@ package com.ka2x.swagger.util;
 
 
 import com.ka2x.common.util.StringUtil;
-import springfox.documentation.oas.configuration.OpenApiJacksonModule;
 import springfox.documentation.spring.web.json.JacksonModuleRegistrar;
 import springfox.documentation.spring.web.json.Json;
 import springfox.documentation.spring.web.json.JsonSerializer;
+import springfox.documentation.swagger2.configuration.Swagger2JacksonModule;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public class SwaggerUtil {
 
     static {
         List<JacksonModuleRegistrar> modules = new ArrayList<>();
-        modules.add(new OpenApiJacksonModule());
+        modules.add(new Swagger2JacksonModule());
 //        modules.add(new Swagger2JacksonModule());
         jsonSerializer = new JsonSerializer(modules);
 
