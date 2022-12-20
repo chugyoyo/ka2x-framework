@@ -5,6 +5,7 @@ import io.swagger.models.*;
 import io.swagger.models.properties.*;
 import lombok.Data;
 import org.junit.Test;
+
 import java.util.*;
 
 import java.util.ArrayList;
@@ -88,5 +89,16 @@ public class SwaggerCoreTest {
         swagger.paths(paths);
 
         System.out.println(SwaggerUtil.toJsonString(swagger));
+    }
+
+    @Test
+    public void t_5() {
+        ArrayList<Long> objects = new ArrayList<>();
+        Long a = 1L;
+        Long c = a;
+        objects.add(a);
+        objects.add(c);
+        a = 2L;
+        System.out.println(Arrays.toString(objects.toArray()));
     }
 }

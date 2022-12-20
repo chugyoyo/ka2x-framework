@@ -19,6 +19,7 @@
         <module>ka2x-common</module>
         <module>ka2x</module>
         <module>ka2x-demo</module>
+        <module>ka2x-data</module>
     </modules>
 
     <groupId>com.ka2x</groupId>

@@ -1,0 +1,16 @@
+{
+  "likes": [
+    {
+      "user": {
+        "name": "19927456300",
+        "fullName": "吴泽欣",
+        "url": "/display/~19927456300",
+        "avatarUrl": "/download/attachments/6404897/user-avatar",
+        "followedByRemoteUser": false
+      }
+    }
+  ],
+  "content_type": "comment",
+  "summary": "<span class=\"like-summary-text\">你赞了它</span>",
+  "content_id": "14249402"
+}

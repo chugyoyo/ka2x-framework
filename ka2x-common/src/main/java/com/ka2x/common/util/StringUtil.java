@@ -56,4 +56,30 @@ public class StringUtil {
         }
         return levelStr.toString();
     }
+
+    public static void main(String[] args) {
+        String str = "{\n" +
+                "    \"reqName\":\"保定分配发票号请求\",\n" +
+                "    \"cmdName\": \"保定分配发票号请求\",\n" +
+                "    \"module\": \"10034\",\n" +
+                "    \"data\":[\n" +
+                "\t{\n" +
+                "\t\t\"string\":\"保定分配发票号请求\"\n" +
+                "\t},\n" +
+                "\t{\n" +
+                "\t\t\"nvpairs\":[\n" +
+                "\t\t\t{\n" +
+                "\t\t\t\t\"name\":\"sql\",\n" +
+                "\t\t\t\t\"value\":\"select presstockflag from gpcs_placepoint  where placepointid=?\"\n" +
+                "\t\t\t},\n" +
+                "\t\t\t{\n" +
+                "\t\t\t\t\"name\":\"placepointid\",\n" +
+                "\t\t\t\t\"value\":\"391\"\n" +
+                "\t\t\t}\n" +
+                "\t\t]\n" +
+                "\t}\n" +
+                "]\n" +
+                "}";
+        System.out.println(jsonStringFormat(str));
+    }
 }
